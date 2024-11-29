@@ -14,7 +14,7 @@ import AStarFinder from './AStarFinder.js'
  *     (defaults to manhattan).
  */
 
-export default class BestFirstFinder extends AStarFinder {
+class BestFirstFinder extends AStarFinder {
     constructor(opt) {
         super(opt);
 
@@ -24,3 +24,5 @@ export default class BestFirstFinder extends AStarFinder {
         }
     }
 }
+
+export default BestFirstFinder

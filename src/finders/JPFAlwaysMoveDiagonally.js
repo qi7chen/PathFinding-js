@@ -9,7 +9,7 @@ import DiagonalMovement from '../core/DiagonalMovement.js'
  * diagonally irrespective of the number of obstacles.
  */
 
-export default class JPFAlwaysMoveDiagonally extends JumpPointFinderBase {
+class JPFAlwaysMoveDiagonally extends JumpPointFinderBase {
     constructor(opt) {
         super(opt);
     }
@@ -145,3 +145,5 @@ export default class JPFAlwaysMoveDiagonally extends JumpPointFinderBase {
     };
 
 }
+
+export default JPFAlwaysMoveDiagonally

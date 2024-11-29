@@ -18,7 +18,7 @@ import DiagonalMovement from '../core/DiagonalMovement.js'
  *     suboptimal paths, in order to speed up the search.
  */
 
-export default class AStarFinder {
+class AStarFinder {
     constructor(opt) {
         opt = opt || {};
         this.allowDiagonal = opt.allowDiagonal;
@@ -126,3 +126,4 @@ export default class AStarFinder {
     };
 }
 
+export default AStarFinder

@@ -11,7 +11,7 @@ import DiagonalMovement from '../core/DiagonalMovement.js'
  *     block corners. Deprecated, use diagonalMovement instead.
  * @param {DiagonalMovement} opt.diagonalMovement Allowed diagonal movement.
  */
-export default class BiBreadthFirstFinder {
+class BiBreadthFirstFinder {
     constructor(opt) {
         opt = opt || {};
         this.allowDiagonal = opt.allowDiagonal;
@@ -114,3 +114,5 @@ export default class BiBreadthFirstFinder {
     };
 
 }
+
+export default BiBreadthFirstFinder

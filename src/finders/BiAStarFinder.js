@@ -18,7 +18,7 @@ import DiagonalMovement from '../core/DiagonalMovement.js'
  * @param {number} opt.weight Weight to apply to the heuristic to allow for
  *     suboptimal paths, in order to speed up the search.
  */
-export default class BiAStarFinder {
+class BiAStarFinder {
     contructor(opt) {
         opt = opt || {};
         this.allowDiagonal = opt.allowDiagonal;
@@ -180,3 +180,5 @@ export default class BiAStarFinder {
     };
 
 }
+
+export default BiAStarFinder

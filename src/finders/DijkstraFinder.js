@@ -12,7 +12,7 @@ import AStarFinder from './AStarFinder.js'
  * @param {DiagonalMovement} opt.diagonalMovement Allowed diagonal movement.
  */
 
-export default class DijkstraFinder extends AStarFinder {
+class DijkstraFinder extends AStarFinder {
     constructor(opt) {
         super(opt);
         this.heuristic = function (dx, dy) {
@@ -21,3 +21,5 @@ export default class DijkstraFinder extends AStarFinder {
     }
 
 }
+
+export default  DijkstraFinder

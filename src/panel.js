@@ -1,4 +1,4 @@
-import $ from 'jquery'
+
 import * as Heuristic from './core/Heuristic.js'
 import AStarFinder from './finders/AStarFinder.js'
 import BestFirstFinder from './finders/BestFirstFinder.js'

@@ -8,7 +8,7 @@ import DiagonalMovement from '../core/DiagonalMovement.js'
  * Path finder using the Jump Point Search algorithm which moves
  * diagonally only when there is at most one obstacle.
  */
-export default class JPFMoveDiagonallyIfAtMostOneObstacle extends JumpPointFinderBase {
+class JPFMoveDiagonallyIfAtMostOneObstacle extends JumpPointFinderBase {
     constructor(opt) {
         super(opt);
     }
@@ -149,3 +149,5 @@ export default class JPFMoveDiagonallyIfAtMostOneObstacle extends JumpPointFinde
     };
 
 }
+
+export default JPFMoveDiagonallyIfAtMostOneObstacle

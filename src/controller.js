@@ -5,14 +5,14 @@
  * for the document of the StateMachine module.
  */
 
-import $ from 'jquery'
-import StateMachine from 'javascript-state-machine'
+
+//import StateMachine from './lib/state-machine.js'
 import View from './view.js'
 
 
-const Controller = new StateMachine({
-    init: 'none',
-    transitions: [
+const Controller = StateMachine.create({
+    initial: 'none',
+    events: [
         {
             name: 'init',
             from: 'none',
@@ -95,12 +95,6 @@ const Controller = new StateMachine({
         },
     ],
 
-    gridSize: [64, 36], // number of nodes horizontally and vertically
-    operationsPerSecond: 300,
-
-    methods: {
-
-    }
 });
 
 

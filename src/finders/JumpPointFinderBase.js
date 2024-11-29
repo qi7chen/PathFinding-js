@@ -13,7 +13,7 @@ import DiagonalMovement from '../core/DiagonalMovement.js'
  *     (defaults to manhattan).
  */
 
-export default class JumpPointFinderBase {
+class JumpPointFinderBase {
     constructor(opt) {
         opt = opt || {};
         this.heuristic = opt.heuristic || Heuristic.manhattan;
@@ -114,3 +114,5 @@ export default class JumpPointFinderBase {
     };
 
 }
+
+export default JumpPointFinderBase

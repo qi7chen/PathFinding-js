@@ -12,7 +12,7 @@ import BiAStarFinder from './BiAStarFinder.js'
  * @param {DiagonalMovement} opt.diagonalMovement Allowed diagonal movement.
  */
 
-export default class BiDijkstraFinder extends BiAStarFinder {
+class BiDijkstraFinder extends BiAStarFinder {
     constructor(opt) {
         super(opt);
         this.heuristic = function (dx, dy) {
@@ -21,3 +21,5 @@ export default class BiDijkstraFinder extends BiAStarFinder {
     }
 
 }
+
+export default BiDijkstraFinder

@@ -32,7 +32,7 @@ import DiagonalMovement from '../core/DiagonalMovement.js'
  * @param {number} opt.timeLimit Maximum execution time. Use <= 0 for infinite.
  */
 
-export default class IDAStarFinder {
+class IDAStarFinder {
     constructor(opt) {
         opt = opt || {};
         this.allowDiagonal = opt.allowDiagonal;
@@ -209,3 +209,5 @@ export default class IDAStarFinder {
     };
 
 }
+
+export default IDAStarFinder

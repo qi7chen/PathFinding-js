@@ -13,7 +13,7 @@ import BiAStarFinder from './BiAStarFinder.js'
  * @param {function} opt.heuristic Heuristic function to estimate the distance
  *     (defaults to manhattan).
  */
-export default class BiBestFirstFinder extends BiAStarFinder {
+class BiBestFirstFinder extends BiAStarFinder {
     constructor(opt) {
         super(opt);
 
@@ -23,3 +23,5 @@ export default class BiBestFirstFinder extends BiAStarFinder {
         };
     }
 }
+
+export default BiBestFirstFinder
