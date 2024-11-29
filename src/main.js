@@ -1,24 +1,31 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+import { createApp } from "vue";
+import App from './App.vue'
+import './styles/style.css'
+import './themes/jquery.ui.all.css'
+import './ui/jquery.ui.core.min.js'
+import './ui/jquery.ui.widget.min.js'
+import './ui/jquery.ui.mouse.min.js'
+import './ui/jquery.ui.draggable.min.js'
+import './ui/jquery.ui.accordion.min.js'
+import './ui/jquery.ui.slider.min.js'
 
-setupCounter(document.querySelector('#counter'))
+
+// $(document).ready(function() {
+//     console.log('document is ready')
+//     // suppress select events
+//     $(window).bind('selectstart', function(event) {
+//         event.preventDefault();
+//     });
+//
+//     // initialize visualization
+//     //Panel.init();
+//     //Controller.init();
+// });
+
+function setupApp() {
+    const app = createApp(App)
+    app.mount('#app')
+}
+
+setupApp()
