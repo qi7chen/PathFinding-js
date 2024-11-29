@@ -1,4 +1,4 @@
-import BiAStarFinder from './BiAStarFinder'
+import BiAStarFinder from './BiAStarFinder.js'
 
 /**
  * Bi-directional Dijkstra path-finder.
@@ -12,7 +12,7 @@ import BiAStarFinder from './BiAStarFinder'
  * @param {DiagonalMovement} opt.diagonalMovement Allowed diagonal movement.
  */
 
-export default class BiDijkstraFinder extends BiDijkstraFinder {
+export default class BiDijkstraFinder extends BiAStarFinder {
     constructor(opt) {
         super(opt);
         this.heuristic = function (dx, dy) {

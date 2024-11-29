@@ -1,5 +1,5 @@
-import Node from './Node'
-import DiagonalMovement from './DiagonalMovement'
+import Node from './Node.js'
+import DiagonalMovement from './DiagonalMovement.js'
 
 /**
  * The Grid class, which serves as the encapsulation of the layout of the nodes.

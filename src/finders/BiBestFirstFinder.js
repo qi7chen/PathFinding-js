@@ -1,4 +1,4 @@
-import BiAStarFinder from './BiAStarFinder'
+import BiAStarFinder from './BiAStarFinder.js'
 
 /**
  * Bi-direcitional Best-First-Search path-finder.

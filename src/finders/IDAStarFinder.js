@@ -1,7 +1,7 @@
-import Heap from '@/core/heap'
-import * as Util from '@/core/Util'
-import * as Heuristic from '@/core/Heuristic'
-import DiagonalMovement from '@/core/DiagonalMovement'
+import Heap from '../core/heap.js'
+import * as Util from '../core/Util.js'
+import * as Heuristic from '../core/Heuristic.js'
+import DiagonalMovement from '../core/DiagonalMovement.js'
 
 /**
  * Iterative Deeping A Star (IDA*) path-finder.

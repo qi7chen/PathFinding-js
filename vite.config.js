@@ -8,6 +8,7 @@ export default defineConfig({
     plugins: [
     ],
     resolve: {
+        extensions: ['.mjs', '.js'],
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))
         }

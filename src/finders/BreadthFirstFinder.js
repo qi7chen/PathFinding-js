@@ -1,5 +1,5 @@
-import * as Util from '@/core/Util'
-import DiagonalMovement from '@/core/DiagonalMovement'
+import * as Util from '../core/Util.js'
+import DiagonalMovement from '../core/DiagonalMovement.js'
 
 /**
  * Breadth-First-Search path finder.

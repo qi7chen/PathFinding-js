@@ -1,4 +1,4 @@
-import AStarFinder from './AStarFinder'
+import AStarFinder from './AStarFinder.js'
 
 /**
  * Dijkstra path-finder.

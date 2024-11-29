@@ -1,11 +1,11 @@
 /**
  * @author aniero / https://github.com/aniero
  */
-import DiagonalMovement from '@/core/DiagonalMovement'
-import JPFNeverMoveDiagonally from './JPFNeverMoveDiagonally'
-import JPFAlwaysMoveDiagonally from './JPFAlwaysMoveDiagonally'
-import JPFMoveDiagonallyIfNoObstacles from './JPFMoveDiagonallyIfNoObstacles'
-import JPFMoveDiagonallyIfAtMostOneObstacle from './JPFMoveDiagonallyIfAtMostOneObstacle'
+import DiagonalMovement from '../core/DiagonalMovement.js'
+import JPFNeverMoveDiagonally from './JPFNeverMoveDiagonally.js'
+import JPFAlwaysMoveDiagonally from './JPFAlwaysMoveDiagonally.js'
+import JPFMoveDiagonallyIfNoObstacles from './JPFMoveDiagonallyIfNoObstacles.js'
+import JPFMoveDiagonallyIfAtMostOneObstacle from './JPFMoveDiagonallyIfAtMostOneObstacle.js'
 
 /**
  * Path finder using the Jump Point Search algorithm
@@ -15,7 +15,7 @@ import JPFMoveDiagonallyIfAtMostOneObstacle from './JPFMoveDiagonallyIfAtMostOne
  * @param {DiagonalMovement} opt.diagonalMovement Condition under which diagonal
  *      movement will be allowed.
  */
-export function JumpPointFinder(opt) {
+export default function JumpPointFinder(opt) {
     opt = opt || {};
     if (opt.diagonalMovement === DiagonalMovement.Never) {
         return new JPFNeverMoveDiagonally(opt);
